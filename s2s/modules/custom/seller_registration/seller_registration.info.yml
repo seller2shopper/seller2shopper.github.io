@@ -1,0 +1,5 @@
+name: 'Seller Registration'
+type: module
+description: 'Seller Registration module'
+core: 8.x
+package: 'Custom'

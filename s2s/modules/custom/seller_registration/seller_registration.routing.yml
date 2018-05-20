@@ -1,0 +1,23 @@
+seller_registration.form1:
+  path: '/registration/step1'
+  defaults:
+    _title: 'Registration Form1'
+    _form: '\Drupal\seller_registration\Form\RegistrationSellerP1'
+  requirements:
+    _role: 'administrator'
+
+seller_registration.form2:
+  path: '/registration/step2'
+  defaults:
+    _title: 'Registration Form2'
+    _form: '\Drupal\seller_registration\Form\RegistrationSellerP2'
+  requirements:
+    _role: 'administrator'
+
+seller_registration.form3:
+  path: '/registration/step3'
+  defaults:
+    _title: 'Registration Form3'
+    _form: '\Drupal\seller_registration\Form\RegistrationSellerP3'
+  requirements:
+    _role: 'administrator'
