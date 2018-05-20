@@ -1,0 +1,33 @@
+name: Seller2shopper
+type: theme
+description: 'shopper is HTML5 based Responsive theme for Ecommerce sites. Most flexible & user friendly theme'
+alt text: 'shopper is HTML5 based Responsive theme for Ecommerce sites. Most flexible & user friendly theme'
+package: Core
+# core: 8.x
+
+libraries:
+  - shopper/global-styling
+  - shopper/custom-scripts
+
+regions:
+  header: 'Header'
+  header_top: 'Header Top'
+  header_banner: 'Header Banner'
+  main_menu: 'Main Menu'
+  pre_content: 'Pre-content'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  sidebar_first: 'First sidebar'
+  sidebar_second: 'Second sidebar'
+  footer_first: 'Footer First'
+  footer_second: 'Footer Second'
+
+  
+# Information added by Drupal.org packaging script on 2018-03-19
+core: '8.x'
+project: 'shopper'
+datestamp: 1521458587

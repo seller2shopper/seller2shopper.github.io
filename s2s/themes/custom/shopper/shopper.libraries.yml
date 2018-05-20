@@ -1,0 +1,16 @@
+global-styling:
+  css:
+    theme:
+      css/fontawesome/font-awesome.css: { minified: true }
+      css/style.css: { minified: true }
+
+custom-scripts:
+  minified: true
+  js:
+    'js/script.js': { minified: true }
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once

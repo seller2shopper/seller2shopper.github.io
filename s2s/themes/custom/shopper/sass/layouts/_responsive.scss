@@ -1,0 +1,51 @@
+.region-sidebar-first, .main-content, .region-sidebar-second {
+	margin-bottom: 30px;
+}
+#main{
+	margin-top: 25px;
+}
+.region-sidebar-first, .region-sidebar-second { 
+	padding: 15px;
+}
+@media only screen and (min-width: 1024px) {
+	.region-sidebar-first, .region-sidebar-second {
+		float: left;
+		width: 300px;
+		padding: 20px;
+	}
+	.region-sidebar-second {
+		float: right;
+	}
+	.one-sidebar, .two-sidebars {
+		.main-content {
+			float: left;
+			width: 100%;
+		}
+	}
+	.sidebar-first, .two-sidebars {
+		.main-content-wrap {
+			margin-left: 320px;
+		}
+	}		
+	.sidebar-second {
+		.main-content-wrap {
+			margin-right: 320px;
+		}
+	}
+	.two-sidebars {
+		.region-sidebar-second {
+			width: 100%;
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.two-sidebars {
+		.region-sidebar-second {
+			width: 300px;
+		}
+		.main-content-wrap {
+			margin-right: 320px;
+		}
+	}
+}

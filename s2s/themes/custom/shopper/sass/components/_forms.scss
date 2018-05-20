@@ -1,0 +1,62 @@
+/**
+ * Form Fields
+*/
+input[type="text"], input.form-text, select, textarea, input {
+	//border: 1px solid $inpt_sep;
+	//background: $inpt_bg;
+	//color: $inpt_clr;
+	height: 35px;
+	padding: 6px 12px;
+	font-size: 100%;
+	@include border-radius(2px);
+	max-width: 100%;
+	vertical-align: middle;
+	&:focus {
+		border-color: rgba(0,0,0,0.1);
+		outline: 0 !important;
+		//background: $inpt_h_bg;
+		@include box-shadow(none);
+	}
+}
+textarea, select[multiple="multiple"] {
+	height: auto;
+	padding: 5px;
+}
+button, .form-submit, .button, input[type="button"] {
+	//background: $link_sec_color;
+	//border: 1px solid $link_sec_color;
+	@include transition(color 0.1s linear 0s,background-color 0.1s linear 0s,opacity 0.2s linear 0s!important);
+	//color: $btn_f_clr;
+	min-width: 120px;
+	margin-right: 5px;
+	@include inline-block;
+	padding: 6px 12px;
+	white-space: nowrap;
+	cursor: pointer;
+	@include user-select(none);
+	@include border-radius(4px);
+	height: 35px;
+	line-height: 20px;
+	text-align: center;
+	&:hover {
+		//background: $link_sech_color;
+		//border-color: $link_sech_color;
+	}
+}
+a.button {
+	//color: $btn_f_clr;
+}
+
+.form-item {
+    margin: 0 0 20px;
+    position: relative;
+}
+.form-item label {
+  font-size: 11px;
+  //font-family: $fnt_opensans;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin: 0 10px 0 0;
+  display: block;
+}
