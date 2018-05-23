@@ -1,23 +1,31 @@
-seller_registration.form1:
-  path: '/registration/step1'
+seller_registration.seller_registeration_form:
+  path: '/seller-registration'
   defaults:
-    _title: 'Registration Form1'
-    _form: '\Drupal\seller_registration\Form\RegistrationSellerP1'
+    _title: 'Seller Registeration'
+    _form: '\Drupal\seller_registration\Form\RegistrationSeller'
   requirements:
     _role: 'administrator'
 
-seller_registration.form2:
-  path: '/registration/step2'
+seller_registration.seller_bank_form:
+  path: '/bank-details'
   defaults:
-    _title: 'Registration Form2'
-    _form: '\Drupal\seller_registration\Form\RegistrationSellerP2'
+    _title: 'Bank Details'
+    _form: '\Drupal\seller_registration\Form\BankDetails'
   requirements:
     _role: 'administrator'
 
-seller_registration.form3:
-  path: '/registration/step3'
+seller_registration.seller_store:
+  path: '/store-details'
   defaults:
-    _title: 'Registration Form3'
-    _form: '\Drupal\seller_registration\Form\RegistrationSellerP3'
+    _title: 'Store Details'
+    _form: '\Drupal\seller_registration\Form\StoreDetails'
+  requirements:
+    _role: 'administrator'
+
+seller_registration.business_detail:
+  path: '/business-details'
+  defaults:
+    _title: 'Business Details'
+    _form: '\Drupal\seller_registration\Form\BusinessDetails'
   requirements:
     _role: 'administrator'

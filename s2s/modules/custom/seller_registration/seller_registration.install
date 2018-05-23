@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * @file
+ * Contains install functions for seller role users
+ */
+
+use Drupal\Core\Database\Database;
+
+/**
+ * Implements hook_schema().
+ */
+function seller_registration_schema() {
+  $schema['seller_details'] = [
+    'fields' => [
+      'sid' => [
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'seller_name' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'NOT NULL' => TRUE,
+      ],
+      'password' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'NOT NULL' => TRUE,
+      ],
+      'email' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'NOT NULL' => TRUE,
+      ],
+      'phone' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'NOT NULL' => TRUE,
+      ]
+    ],
+    'primary key' => ['sid'],
+  ];
+  return $schema;
+}
+
